@@ -1,5 +1,5 @@
 {
-  "name": "base-components",
+  "name": "@jneiva0/shared",
   "version": "1.0.0",
   "description": "react reusable components and hooks",
   "main": "lib/index.js",
