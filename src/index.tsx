@@ -1,0 +1,7 @@
+export * from './components/AlertaErro/AlertaErro'
+export * from './components/Form/Form'
+export * from './components/Form/FormControl'
+export * from './components/Form/InputControl'
+export * from './components/Form/NumberInputControl'
+export * from './components/Form/SwitchControl'
+export * from './components/Loading/Loading'

@@ -1,9 +1,9 @@
 import { forwardRef, Input, InputProps } from '@chakra-ui/react'
 import { useField } from 'formik'
-import React, { ForwardedRef } from 'react'
+import React, { FC, ForwardedRef } from 'react'
 import { BaseFormControlProps, FormControl } from './FormControl'
 
-export const InputControl = forwardRef(
+export const InputControl: FC<InputControlProps> = forwardRef(
   (props: InputControlProps, ref: ForwardedRef<HTMLInputElement>) => {
     const { name, label, inputProps, ...rest } = props
     const [field] = useField(name)

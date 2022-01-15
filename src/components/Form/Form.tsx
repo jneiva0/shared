@@ -1,18 +1,17 @@
 import {
   Button,
   ButtonProps,
-  chakra,
   FormErrorMessage,
   FormLabel,
   NumberInput,
   NumberInputField,
   NumberInputProps,
 } from '@chakra-ui/react'
-import { Form, useField, useFormikContext } from 'formik'
-import React from 'react'
+import { useField, useFormikContext } from 'formik'
+import React, { FC } from 'react'
 import { BaseFormControlProps, FormControl } from './FormControl'
 
-export const ChakraForm = chakra(Form)
+// export const ChakraForm = chakra(Form)
 
 export const NumeroField = ({
   name,
@@ -36,7 +35,7 @@ export const NumeroField = ({
   )
 }
 
-export const SubmitButton = (props: ButtonProps) => {
+export const SubmitButton: FC<ButtonProps> = props => {
   const { isSubmitting, dirty, isValid } = useFormikContext()
 
   return (

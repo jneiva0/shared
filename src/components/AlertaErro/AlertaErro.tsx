@@ -5,18 +5,18 @@ import {
   AlertTitle,
   BoxProps,
 } from '@chakra-ui/react'
-import React from 'react'
+import React, { FC } from 'react'
 
 export type AlertaErroProps = {
   titulo?: string
   descricao?: string
 } & BoxProps
 
-export const AlertaErro = ({
+export const AlertaErro: FC<AlertaErroProps> = ({
   titulo,
   descricao,
   ...props
-}: AlertaErroProps) => {
+}) => {
   return (
     <Alert
       status='error'
