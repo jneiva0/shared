@@ -41,5 +41,16 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "rollup -c"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jneiva0/shared.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jneiva0/shared/issues"
+  },
+  "homepage": "https://github.com/jneiva0/shared#readme"
 }
