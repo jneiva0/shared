@@ -7,6 +7,12 @@
   "types": "lib/index.d.ts",
   "author": "Joao Neiva",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "/lib"
+  ],
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@rollup/plugin-commonjs": "^21.0.1",
